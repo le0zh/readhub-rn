@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { Platform, StyleSheet, Text, View, Image } from 'react-native';
 
-export default class MailBoxPage extends Component {
+export default class Menus extends Component {
+  static navigatorStyle = {
+    navBarBackgroundColor: '#37363', 
+    statusBarTextColorScheme: 'dark',
+  };
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>
-          MailBox
-        </Text>
+        <Text style={styles.title}>Menus</Text>
       </View>
     );
   }
